@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/fstab.qcom:root/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab \
     $(LOCAL_PATH)/rootdir/root/init.class_main.sh:root/init.class_main.sh \
     $(LOCAL_PATH)/rootdir/root/init.mdm.sh:root/init.mdm.sh \
     $(LOCAL_PATH)/rootdir/root/init.qcom.class_core.sh:root/init.qcom.class_core.sh \

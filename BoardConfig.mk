@@ -183,6 +183,15 @@ BOARD_CUSTOM_RECOVERY_UI         := \
 	../../$(COMMON_PATH)/recovery/recovery_ui_cn.c
 endif
 
+# TWRP
+DEVICE_RESOLUTION := 1920x1080
+RECOVERY_VARIANT := twrp
+TARGET_USERIMAGES_USE_EXT4 := true
+TW_FLASH_FROM_STORAGE := true
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+
+
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 -include vendor/xiaomi/cancro/BoardConfigVendor.mk
