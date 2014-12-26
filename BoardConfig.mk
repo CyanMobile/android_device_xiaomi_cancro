@@ -62,7 +62,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/xiaomi/cancro/bluetooth
 BOARD_EGL_CFG := device/xiaomi/cancro/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION := true
-TARGET_GRALLOC_USES_ASHMEM := false
 TARGET_USES_ION := true
 TARGET_USE_ION_COMPAT := true
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
@@ -116,19 +115,16 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Recovery
 TARGET_RECOVERY_FSTAB            := device/xiaomi/cancro/rootdir/root/fstab.qcom
 RECOVERY_FSTAB_VERSION           := 2
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_NATIVE_DUALBOOT := true
 BOARD_NATIVE_DUALBOOT_SINGLEDATA := true
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 
 USE_CHINESE_RECOVERY := false
 ifneq ($(USE_CHINESE_RECOVERY),true)
-BOARD_USE_CUSTOM_RECOVERY_FONT   := \"roboto_23x41.h\"
 BOARD_CUSTOM_RECOVERY_UI         := \
 	../../$(COMMON_PATH)/recovery/dualboot.c \
 	../../$(COMMON_PATH)/recovery/recovery_ui.c
 else
-BOARD_USE_CUSTOM_RECOVERY_FONT   := \"fontcn46_28x73.h\"
 BOARD_CUSTOM_RECOVERY_UI         := \
 	../../$(COMMON_PATH)/recovery/dualboot_cn.c \
 	../../$(COMMON_PATH)/recovery/recovery_ui_cn.c
@@ -146,9 +142,6 @@ TARGET_HW_DISK_ENCRYPTION := true
 
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true
-
-# Enable CPU boosting events in the power HAL
-TARGET_USES_CPU_BOOST_HINT := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -180,8 +173,6 @@ TARGET_USES_LOGD := false
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
-
-BOARD_HAS_NO_SELECT_BUTTON := true
 
 # SELinux policies
 # qcom sepolicy
