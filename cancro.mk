@@ -235,12 +235,12 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/root/chargeonlymode:root/sbin/chargeonlymode
+    $(LOCAL_PATH)/configs/chargeonlymode:root/sbin/chargeonlymode
  
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/mount_ext4.sh:system/bin/mount_ext4.sh \
-    $(LOCAL_PATH)/rootdir/root/e2fsck_static:root/sbin/e2fsck_static
+    $(LOCAL_PATH)/configs/e2fsck_static:root/sbin/e2fsck_static
 
 PRODUCT_PACKAGES += \
     dualboot_init
@@ -253,8 +253,8 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/config/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
+    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    $(LOCAL_PATH)/configs/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
 
 # NFC packages
 PRODUCT_PACKAGES += \
