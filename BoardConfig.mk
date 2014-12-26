@@ -113,7 +113,7 @@ BOARD_TOMBSTONESIMAGE_PARTITION_SIZE := 73400320
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Recovery
-TARGET_RECOVERY_FSTAB            := device/xiaomi/cancro/rootdir/root/fstab.qcom
+TARGET_RECOVERY_FSTAB            := device/xiaomi/cancro/rootdir/etc/fstab.qcom
 RECOVERY_FSTAB_VERSION           := 2
 BOARD_NATIVE_DUALBOOT := true
 BOARD_NATIVE_DUALBOOT_SINGLEDATA := true
