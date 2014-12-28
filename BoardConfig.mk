@@ -169,19 +169,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_NATIVE_DUALBOOT := true
 BOARD_NATIVE_DUALBOOT_SINGLEDATA := true
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
-
-USE_CHINESE_RECOVERY := false
-ifneq ($(USE_CHINESE_RECOVERY),true)
-BOARD_USE_CUSTOM_RECOVERY_FONT   := \"roboto_23x41.h\"
-BOARD_CUSTOM_RECOVERY_UI         := \
-	../../$(COMMON_PATH)/recovery/dualboot.c \
-	../../$(COMMON_PATH)/recovery/recovery_ui.c
-else
-BOARD_USE_CUSTOM_RECOVERY_FONT   := \"fontcn46_28x73.h\"
-BOARD_CUSTOM_RECOVERY_UI         := \
-	../../$(COMMON_PATH)/recovery/dualboot_cn.c \
-	../../$(COMMON_PATH)/recovery/recovery_ui_cn.c
-endif
+RECOVERY_GRAPHICS_USE_LINELENGTH := true 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 -include vendor/xiaomi/cancro/BoardConfigVendor.mk
