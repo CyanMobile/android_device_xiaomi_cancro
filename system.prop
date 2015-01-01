@@ -24,21 +24,16 @@ ro.qualcomm.cabl=0
 ro.qcom.ad=1
 ro.qcom.ad.calib.data=/data/calib.cfg
 
-# qualcomm sensors enable 
-ro.qti.sensors.max_geomag_rotv=60
-ro.qti.sensors.max_gyro_rate=200
-ro.qti.sensors.max_accel_rate=200
-ro.qti.sensors.max_grav=200
-ro.qti.sensors.max_rotvec=200
-ro.qti.sensors.max_orient=200
-ro.qti.sensors.max_linacc=200
-ro.qti.sensors.max_gamerv_rate=200
-ro.qti.sensors.smd=true
-ro.qti.sensors.game_rv=true
-ro.qti.sensors.georv=true
-ro.qti.sensors.smgr_mag_cal_en=true
+# qualcomm sensors enable
+ro.qualcomm.sensors.qmd=true
+ro.qualcomm.sensors.smd=true
+ro.qti.sdk.sensors.gestures=true
+ro.qualcomm.sensors.pedometer=true
+ro.qualcomm.sensors.pam=true
+ro.qualcomm.sensors.scrn_ortn=true
 ro.qti.sensors.step_detector=true
 ro.qti.sensors.step_counter=true
-persist.debug.sensors.hal=w
+ro.qualcomm.sensors.georv=true
+debug.qualcomm.sns.hal=w
 debug.qualcomm.sns.daemon=w
 debug.qualcomm.sns.libsensor1=w
