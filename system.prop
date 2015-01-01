@@ -24,18 +24,8 @@ ro.qualcomm.cabl=0
 ro.qcom.ad=1
 ro.qcom.ad.calib.data=/data/calib.cfg
 
-<<<<<<< HEAD
 # Force camera API version 1
 camera2.portability.force_api=1
-
-# qualcomm sensors enable
-ro.qualcomm.sensors.qmd=true
-ro.qualcomm.sensors.smd=true
-ro.qti.sdk.sensors.gestures=true
-ro.qualcomm.sensors.pedometer=true
-ro.qualcomm.sensors.pam=true
-ro.qualcomm.sensors.scrn_ortn=true
-=======
 # qualcomm sensors enable 
 ro.qti.sensors.max_geomag_rotv=60
 ro.qti.sensors.max_gyro_rate=200
@@ -49,7 +39,6 @@ ro.qti.sensors.smd=true
 ro.qti.sensors.game_rv=true
 ro.qti.sensors.georv=true
 ro.qti.sensors.smgr_mag_cal_en=true
->>>>>>> parent of bc847fd... Revert "Update sensors"
 ro.qti.sensors.step_detector=true
 ro.qti.sensors.step_counter=true
 persist.debug.sensors.hal=w
