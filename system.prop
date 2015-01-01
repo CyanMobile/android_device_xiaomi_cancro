@@ -44,3 +44,4 @@ ro.qti.sensors.step_counter=true
 persist.debug.sensors.hal=w
 debug.qualcomm.sns.daemon=w
 debug.qualcomm.sns.libsensor1=w
+
