@@ -210,7 +210,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom
+    power.msm8974
     
 # Keystore
 PRODUCT_PACKAGES += \
@@ -341,7 +341,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # strict operation
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.strict_op_enable=false
-
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
@@ -382,6 +381,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
+    persist.sys.strictmode.visual=0 \
+    persist.sys.strictmode.disable=1 \
     media.stagefright.use-awesome=true \
     debug.mdpcomp.4k2kSplit=1
 
