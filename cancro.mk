@@ -279,6 +279,7 @@ PRODUCT_PACKAGES += \
     libnfc_nci_jni \
     NfcNci \
     Tag \
+    nfc_nci.bcm2079x.default \
     com.android.nfc_extras
 
 # IR package
@@ -428,6 +429,10 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 
 # call hwui memory config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
+ifneq ($(QCPATH),)
+$(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
+endif
 
 # call the proprietary setup
 $(call inherit-product, vendor/xiaomi/cancro/cancro-vendor.mk)

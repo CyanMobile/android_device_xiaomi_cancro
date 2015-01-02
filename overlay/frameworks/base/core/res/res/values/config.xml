@@ -227,6 +227,10 @@
     <!-- Make things go fast -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
 
+    <!-- Performance profiles -->
+    <string name="config_perf_profile_prop">powerhal</string>
+    <string name="config_perf_profile_default_entry">1</string>
+
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
             1 - Menu key
