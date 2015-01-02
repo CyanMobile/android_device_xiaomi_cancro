@@ -279,7 +279,6 @@ PRODUCT_PACKAGES += \
     libnfc_nci_jni \
     NfcNci \
     Tag \
-    nfc_nci.bcm2079x.default \
     com.android.nfc_extras
 
 # IR package
