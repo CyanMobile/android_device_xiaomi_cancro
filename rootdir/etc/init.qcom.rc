@@ -108,7 +108,7 @@ on boot
     chmod 2770 /data/system/perfd
 
     chown root radio /proc/cmdline
-    chmod 0444 /proc/cmdline
+    chmod 0644 /proc/cmdline
 
     setprop wifi.interface wlan0
 
